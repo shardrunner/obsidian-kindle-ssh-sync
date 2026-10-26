@@ -1,0 +1,15 @@
+node_modules/
+main.js
+*.js.map
+
+# Private oracle fixtures: the raw cache and this plugin's frozen decode of it.
+# Personal reading data must never be committed.
+test/fixtures/cache/
+test/fixtures/golden.json
+test/fixtures/library.json
+test/fixtures/pull.tar
+test/fixtures/pull-live.tar
+
+# Obsidian writes plugin settings here (the plugin dir symlinks to this repo).
+# May contain the device password.
+data.json

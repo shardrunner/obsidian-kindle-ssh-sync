@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2022",
+    "allowJs": true,
+    "noImplicitAny": true,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "isolatedModules": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "lib": [
+      "DOM",
+      "ES2022"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ]
+}

@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible problem with Kindle SSH Sync
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Personal hobby project; support is best-effort. Leave passwords and personal
+        data out of attachments. A small example is more useful than a whole cache.
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Plugin, Obsidian, Kindle model and firmware (where relevant).
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error or sync report
+      description: Include the exact message. For load failures, include the result of require('node:sqlite').DatabaseSync from Obsidian's developer console.

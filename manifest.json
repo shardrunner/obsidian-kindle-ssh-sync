@@ -1,0 +1,10 @@
+{
+	"id": "kindle-ssh-sync",
+	"name": "Kindle SSH Sync",
+	"version": "2.0.0",
+	"minAppVersion": "1.9.2",
+	"description": "Pull reading metadata, stats, progress and highlights directly from a jailbroken Kindle over SSH into Obsidian notes. No Python, no external toolkit.",
+	"author": "Michael Brunner",
+	"authorUrl": "https://github.com/shardrunner",
+	"isDesktopOnly": true
+}

@@ -1,0 +1,43 @@
+{
+  "name": "obsidian-kindle-ssh-sync",
+  "version": "2.0.0",
+  "description": "Pull reading metadata, stats, progress and highlights directly from a jailbroken Kindle over SSH into Obsidian notes.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
+    "test": "TZ=Europe/Berlin node --import tsx --test test/*.test.ts",
+    "test:bundle": "node scripts/smoke-bundle.mjs",
+    "test:oracle": "node scripts/test-oracle.mjs",
+    "test:oracle:strict": "node scripts/test-oracle.mjs --strict",
+    "fixtures:golden": "TZ=Europe/Berlin node --import tsx scripts/generate-golden.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "obsidian",
+    "obsidian-plugin",
+    "kindle",
+    "reading-stats",
+    "ssh"
+  ],
+  "author": "Michael Brunner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shardrunner/obsidian-kindle-ssh-sync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shardrunner/obsidian-kindle-ssh-sync/issues"
+  },
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "ssh2": "^1.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/ssh2": "^1.15.5",
+    "esbuild": "^0.25.0",
+    "obsidian": "^1.14.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
